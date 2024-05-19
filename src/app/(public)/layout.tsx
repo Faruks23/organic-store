@@ -1,7 +1,16 @@
-
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
 import Header from "@/Components/Header/Header";
 import Footer from "@/Components/Footer/Footer";
-import Link from "next/link";
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "Organic Store",
+  description: "This is a organic store you can buy from as many fruits and vegetable",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
