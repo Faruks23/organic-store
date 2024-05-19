@@ -1,20 +1,27 @@
-
+"use client"
 
 import CountDown from '@/Components/CountDown/CountDowen';
-import { productType } from '@/Components/Hooks/useProduct';
+import useProducts, { productType } from '@/Components/Hooks/useProduct';
 import Card from '@/Components/common/Card/Card';
 import Title from '@/Components/common/Title';
 import React from 'react';
 
-const FlashSalePage =async () => {
+const FlashSalePage =  () => {
   
   const initialTime = new Date().getTime() + 3196400000;
 
-  const res = await fetch("https://pro-store-server.vercel.app/products")
-  const data = await res.json();
-  if (!data) {
+  // const res = await fetch("https://pro-store-server.vercel.app/products")
+  // const data = await res.json();
+  // if (!data) {
+  //   return <p>Loading....</p>
+  // }
+  const { data, isLoading, error } = useProducts()
+  
+  if (isLoading) {
     return <p>Loading....</p>
   }
+
+
   return (
     <div className=' py-32'>
       <div className="container mx-auto">

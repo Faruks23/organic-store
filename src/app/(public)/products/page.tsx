@@ -1,25 +1,27 @@
 
-import { productType } from '@/Components/Hooks/useProduct';
+"use client"
+
+import useProducts, { productType } from '@/Components/Hooks/useProduct';
 import Card from '@/Components/common/Card/Card';
 import Title from '@/Components/common/Title';
+import { brands } from '@/Components/data/brand';
 import React from 'react';
 
-const ProductPage =async () => {
+const ProductPage =  () => {
 
-  const ProductRes = await fetch("https://pro-store-server.vercel.app/products", {
-    next: {
-      revalidate: 30,
-    }
-  })
-  const data = await ProductRes.json();
+  const { data, isLoading, error } = useProducts()
 
-
-  const res = await fetch("https://pro-store-server.vercel.app/brands")
-  const brands = await res.json();
-  
-  if (!data && !brands) {
-    return <p>Loading...</p>
+  if (isLoading) {
+    return <p>Loading....</p>
   }
+
+
+  // const res = await fetch("https://pro-store-server.vercel.app/brands")
+  // const brands = await res.json();
+  
+  // if (!data && !brands) {
+  //   return <p>Loading...</p>
+  // }
 
   return (
     <div className=' py-32'>
