@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "This is a organic store you can buy from as many fruits and vegetable",
 };
 
-export default function RootLayout({
+export default function HomeLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
