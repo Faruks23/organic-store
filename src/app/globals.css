@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 body{
   padding: 0;
   margin: 0;
@@ -11,7 +9,6 @@ body{
   overflow-x: hidden;
   position: relative;
 }
-
 
  .hover-underline-animation {
   display: inline-block;
