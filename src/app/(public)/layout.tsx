@@ -2,13 +2,9 @@
 import Header from "@/Components/Header/Header";
 import Footer from "@/Components/Footer/Footer";
 
-export default function HomeLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+const HomeLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   return (
-   
+
     <>
       <Header></Header>
       <div className="min-h-[calc(100vh-60px)]">
@@ -16,25 +12,11 @@ export default function HomeLayout({
       </div>
       <Footer></Footer>
 
-     
-      
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
 
     </>
-     
-   
+
+
   );
 }
+
+export default HomeLayout;
