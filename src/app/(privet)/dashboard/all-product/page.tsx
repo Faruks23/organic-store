@@ -18,7 +18,7 @@ const AllProduct = () => {
                     <input type="checkbox" className="checkbox" />
                   </label>
                 </th>
-                <th>Name</th>
+                <th className='hover-underline-animation'>Name</th>
                 <th>Category</th>
                 <th>Price</th>
                 <th>Rating</th>
