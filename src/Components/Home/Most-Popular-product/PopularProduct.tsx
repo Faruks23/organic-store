@@ -48,7 +48,7 @@ const PopularProduct =  () => {
         <div className='flex justify-between items-center'>
           <div className="popular-head max-w-[610px]">
             <Title title='Most Popular Products'></Title>
-            <p className=' mt-5'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+            <p className=' mt-5'>Check out our most popular products that customers love! These bestsellers have been highly rated and frequently purchased, ensuring you get the best value and quality.</p>
           </div>
           <ViewButton path='/products' title='View All'></ViewButton>
         </div>

@@ -11,7 +11,7 @@ const TopCategory = () => {
       <div className='container mx-auto'>
         <div className="top-category-head text-center">
           <Title title='Top Categories'></Title>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+          <p>Explore our top categories to find the best products tailored to your needs. From electronics and fashion to home essentials and beauty products.</p>
         </div>
         <div className="category-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:gap-[20px] gap-4 md:gap-5 mt-[70px]">
           {brands.slice(0,4).map(brand => {
